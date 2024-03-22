@@ -3,45 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="This is the home page of the website">
-    <meta name="keywords" content="home, website, login">
-    <meta name="author" content="LIMA repository">
-    <meta name="robots" content="index, follow">
-    <title>Welcome to LIMA Docs Repository</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="main">
-        <header>
-            <h1>Welcome to LIMA Docs Repository</h1>
-        </header>
-        <form action="login.php" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
+        <form action="">
+            <h1>Login</h1>
+            <div class="textbox">
+                <input type="text" placeholder="UserName" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="textbox">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="checkbox">
+                <label> <input type="checkbox"> Remember Me</label>
+                <a href="#">Forget Password</a>
+            </div>
+
+            <button class="button" type="submit"> Login</button>
+            <div class="register">
+                <p>Don't have an account ?
+                    <a href="#"> Register</a>
+                </p>
+                
+            </div>
         </form>
-        <nav>
-            <ul>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section>
-                <h2>What is LIMA Docs Repository?</h2>
-                <p>LIMA Docs Repository is a website that provides a collection of documents and resources for the LIMA project.</p>
-            </section>
-            <section>
-                <h2>What is the LIMA project?</h2>
-                <p>The LIMA project is a project that aims to provide a platform for the development of digital humanities tools and resources.</p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2020 LIMA Docs Repository</p>
-        </footer>
+    </div>
 </body>
 </html>
